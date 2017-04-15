@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A01EA21AA600594981 /* AppDelegate.swift */; };
-		FF4A75A31EA21AA600594981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A21EA21AA600594981 /* ViewController.swift */; };
+		FF4A75A31EA21AA600594981 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A21EA21AA600594981 /* InitialViewController.swift */; };
 		FF4A75A61EA21AA600594981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75A41EA21AA600594981 /* Main.storyboard */; };
 		FF4A75A81EA21AA600594981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75A71EA21AA600594981 /* Assets.xcassets */; };
 		FF4A75AB1EA21AA600594981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75A91EA21AA600594981 /* LaunchScreen.storyboard */; };
 		FF4A75B61EA21AA600594981 /* Up2SchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75B51EA21AA600594981 /* Up2SchoolTests.swift */; };
 		FF4A75C11EA21AA600594981 /* Up2SchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75C01EA21AA600594981 /* Up2SchoolUITests.swift */; };
+		FF4A75CF1EA21D8C00594981 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75CE1EA21D8C00594981 /* LaunchScreen.png */; };
+		FF4A75D11EA2205500594981 /* parent.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75D01EA2205500594981 /* parent.png */; };
+		FF4A75D31EA2205B00594981 /* teacher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75D21EA2205B00594981 /* teacher.jpg */; };
+		FF4A75D51EA2226D00594981 /* sign_up_background.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75D41EA2226D00594981 /* sign_up_background.png */; };
+		FFDEE7AC1EA2267600D8A81F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7AB1EA2267600D8A81F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		FF4A759D1EA21AA600594981 /* Up2School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Up2School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A75A01EA21AA600594981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF4A75A21EA21AA600594981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF4A75A21EA21AA600594981 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		FF4A75A51EA21AA600594981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF4A75A71EA21AA600594981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF4A75AA1EA21AA600594981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		FF4A75BC1EA21AA600594981 /* Up2SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Up2SchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A75C01EA21AA600594981 /* Up2SchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Up2SchoolUITests.swift; sourceTree = "<group>"; };
 		FF4A75C21EA21AA600594981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4A75CE1EA21D8C00594981 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen.png; sourceTree = "<group>"; };
+		FF4A75D01EA2205500594981 /* parent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parent.png; sourceTree = "<group>"; };
+		FF4A75D21EA2205B00594981 /* teacher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teacher.jpg; sourceTree = "<group>"; };
+		FF4A75D41EA2226D00594981 /* sign_up_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_up_background.png; sourceTree = "<group>"; };
+		FFDEE7AB1EA2267600D8A81F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				FF4A75A01EA21AA600594981 /* AppDelegate.swift */,
-				FF4A75A21EA21AA600594981 /* ViewController.swift */,
+				FF4A75A21EA21AA600594981 /* InitialViewController.swift */,
+				FFDEE7AB1EA2267600D8A81F /* LoginViewController.swift */,
 				FF4A75A41EA21AA600594981 /* Main.storyboard */,
 				FF4A75A71EA21AA600594981 /* Assets.xcassets */,
 				FF4A75A91EA21AA600594981 /* LaunchScreen.storyboard */,
 				FF4A75AC1EA21AA600594981 /* Info.plist */,
+				FF4A75CE1EA21D8C00594981 /* LaunchScreen.png */,
+				FF4A75D01EA2205500594981 /* parent.png */,
+				FF4A75D21EA2205B00594981 /* teacher.jpg */,
+				FF4A75D41EA2226D00594981 /* sign_up_background.png */,
 			);
 			path = Up2School;
 			sourceTree = "<group>";
@@ -235,9 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4A75D51EA2226D00594981 /* sign_up_background.png in Resources */,
 				FF4A75AB1EA21AA600594981 /* LaunchScreen.storyboard in Resources */,
+				FF4A75CF1EA21D8C00594981 /* LaunchScreen.png in Resources */,
+				FF4A75D11EA2205500594981 /* parent.png in Resources */,
 				FF4A75A81EA21AA600594981 /* Assets.xcassets in Resources */,
 				FF4A75A61EA21AA600594981 /* Main.storyboard in Resources */,
+				FF4A75D31EA2205B00594981 /* teacher.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF4A75A31EA21AA600594981 /* ViewController.swift in Sources */,
+				FFDEE7AC1EA2267600D8A81F /* LoginViewController.swift in Sources */,
+				FF4A75A31EA21AA600594981 /* InitialViewController.swift in Sources */,
 				FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +536,7 @@
 				FF4A75C71EA21AA600594981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF4A75C81EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2SchoolTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +545,7 @@
 				FF4A75CA1EA21AA600594981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF4A75CB1EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2SchoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +554,7 @@
 				FF4A75CD1EA21AA600594981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
