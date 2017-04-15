@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A01EA21AA600594981 /* AppDelegate.swift */; };
+		FF4A75A31EA21AA600594981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A21EA21AA600594981 /* ViewController.swift */; };
+		FF4A75A61EA21AA600594981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75A41EA21AA600594981 /* Main.storyboard */; };
+		FF4A75A81EA21AA600594981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75A71EA21AA600594981 /* Assets.xcassets */; };
+		FF4A75AB1EA21AA600594981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4A75A91EA21AA600594981 /* LaunchScreen.storyboard */; };
+		FF4A75B61EA21AA600594981 /* Up2SchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75B51EA21AA600594981 /* Up2SchoolTests.swift */; };
+		FF4A75C11EA21AA600594981 /* Up2SchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75C01EA21AA600594981 /* Up2SchoolUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4A75B21EA21AA600594981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4A75951EA21AA600594981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4A759C1EA21AA600594981;
+			remoteInfo = Up2School;
+		};
+		FF4A75BD1EA21AA600594981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4A75951EA21AA600594981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4A759C1EA21AA600594981;
+			remoteInfo = Up2School;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4A759D1EA21AA600594981 /* Up2School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Up2School.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A75A01EA21AA600594981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF4A75A21EA21AA600594981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF4A75A51EA21AA600594981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF4A75A71EA21AA600594981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4A75AA1EA21AA600594981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF4A75AC1EA21AA600594981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4A75B11EA21AA600594981 /* Up2SchoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Up2SchoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A75B51EA21AA600594981 /* Up2SchoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Up2SchoolTests.swift; sourceTree = "<group>"; };
+		FF4A75B71EA21AA600594981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4A75BC1EA21AA600594981 /* Up2SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Up2SchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A75C01EA21AA600594981 /* Up2SchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Up2SchoolUITests.swift; sourceTree = "<group>"; };
+		FF4A75C21EA21AA600594981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4A759A1EA21AA600594981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A75AE1EA21AA600594981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A75B91EA21AA600594981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4A75941EA21AA600594981 = {
+			isa = PBXGroup;
+			children = (
+				FF4A759F1EA21AA600594981 /* Up2School */,
+				FF4A75B41EA21AA600594981 /* Up2SchoolTests */,
+				FF4A75BF1EA21AA600594981 /* Up2SchoolUITests */,
+				FF4A759E1EA21AA600594981 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4A759E1EA21AA600594981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A759D1EA21AA600594981 /* Up2School.app */,
+				FF4A75B11EA21AA600594981 /* Up2SchoolTests.xctest */,
+				FF4A75BC1EA21AA600594981 /* Up2SchoolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4A759F1EA21AA600594981 /* Up2School */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A75A01EA21AA600594981 /* AppDelegate.swift */,
+				FF4A75A21EA21AA600594981 /* ViewController.swift */,
+				FF4A75A41EA21AA600594981 /* Main.storyboard */,
+				FF4A75A71EA21AA600594981 /* Assets.xcassets */,
+				FF4A75A91EA21AA600594981 /* LaunchScreen.storyboard */,
+				FF4A75AC1EA21AA600594981 /* Info.plist */,
+			);
+			path = Up2School;
+			sourceTree = "<group>";
+		};
+		FF4A75B41EA21AA600594981 /* Up2SchoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A75B51EA21AA600594981 /* Up2SchoolTests.swift */,
+				FF4A75B71EA21AA600594981 /* Info.plist */,
+			);
+			path = Up2SchoolTests;
+			sourceTree = "<group>";
+		};
+		FF4A75BF1EA21AA600594981 /* Up2SchoolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A75C01EA21AA600594981 /* Up2SchoolUITests.swift */,
+				FF4A75C21EA21AA600594981 /* Info.plist */,
+			);
+			path = Up2SchoolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4A759C1EA21AA600594981 /* Up2School */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4A75C51EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2School" */;
+			buildPhases = (
+				FF4A75991EA21AA600594981 /* Sources */,
+				FF4A759A1EA21AA600594981 /* Frameworks */,
+				FF4A759B1EA21AA600594981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Up2School;
+			productName = Up2School;
+			productReference = FF4A759D1EA21AA600594981 /* Up2School.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4A75B01EA21AA600594981 /* Up2SchoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4A75C81EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2SchoolTests" */;
+			buildPhases = (
+				FF4A75AD1EA21AA600594981 /* Sources */,
+				FF4A75AE1EA21AA600594981 /* Frameworks */,
+				FF4A75AF1EA21AA600594981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4A75B31EA21AA600594981 /* PBXTargetDependency */,
+			);
+			name = Up2SchoolTests;
+			productName = Up2SchoolTests;
+			productReference = FF4A75B11EA21AA600594981 /* Up2SchoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4A75BB1EA21AA600594981 /* Up2SchoolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4A75CB1EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2SchoolUITests" */;
+			buildPhases = (
+				FF4A75B81EA21AA600594981 /* Sources */,
+				FF4A75B91EA21AA600594981 /* Frameworks */,
+				FF4A75BA1EA21AA600594981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4A75BE1EA21AA600594981 /* PBXTargetDependency */,
+			);
+			name = Up2SchoolUITests;
+			productName = Up2SchoolUITests;
+			productReference = FF4A75BC1EA21AA600594981 /* Up2SchoolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4A75951EA21AA600594981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Up2School;
+				TargetAttributes = {
+					FF4A759C1EA21AA600594981 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QE33WF5A23;
+						ProvisioningStyle = Automatic;
+					};
+					FF4A75B01EA21AA600594981 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QE33WF5A23;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF4A759C1EA21AA600594981;
+					};
+					FF4A75BB1EA21AA600594981 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QE33WF5A23;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF4A759C1EA21AA600594981;
+					};
+				};
+			};
+			buildConfigurationList = FF4A75981EA21AA600594981 /* Build configuration list for PBXProject "Up2School" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4A75941EA21AA600594981;
+			productRefGroup = FF4A759E1EA21AA600594981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4A759C1EA21AA600594981 /* Up2School */,
+				FF4A75B01EA21AA600594981 /* Up2SchoolTests */,
+				FF4A75BB1EA21AA600594981 /* Up2SchoolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4A759B1EA21AA600594981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A75AB1EA21AA600594981 /* LaunchScreen.storyboard in Resources */,
+				FF4A75A81EA21AA600594981 /* Assets.xcassets in Resources */,
+				FF4A75A61EA21AA600594981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A75AF1EA21AA600594981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A75BA1EA21AA600594981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4A75991EA21AA600594981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A75A31EA21AA600594981 /* ViewController.swift in Sources */,
+				FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A75AD1EA21AA600594981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A75B61EA21AA600594981 /* Up2SchoolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A75B81EA21AA600594981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A75C11EA21AA600594981 /* Up2SchoolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4A75B31EA21AA600594981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4A759C1EA21AA600594981 /* Up2School */;
+			targetProxy = FF4A75B21EA21AA600594981 /* PBXContainerItemProxy */;
+		};
+		FF4A75BE1EA21AA600594981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4A759C1EA21AA600594981 /* Up2School */;
+			targetProxy = FF4A75BD1EA21AA600594981 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF4A75A41EA21AA600594981 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4A75A51EA21AA600594981 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF4A75A91EA21AA600594981 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4A75AA1EA21AA600594981 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF4A75C31EA21AA600594981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4A75C41EA21AA600594981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4A75C61EA21AA600594981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QE33WF5A23;
+				INFOPLIST_FILE = Up2School/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = up2school.Up2School;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF4A75C71EA21AA600594981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QE33WF5A23;
+				INFOPLIST_FILE = Up2School/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = up2school.Up2School;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF4A75C91EA21AA600594981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QE33WF5A23;
+				INFOPLIST_FILE = Up2SchoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = up2school.Up2SchoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Up2School.app/Up2School";
+			};
+			name = Debug;
+		};
+		FF4A75CA1EA21AA600594981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QE33WF5A23;
+				INFOPLIST_FILE = Up2SchoolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = up2school.Up2SchoolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Up2School.app/Up2School";
+			};
+			name = Release;
+		};
+		FF4A75CC1EA21AA600594981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QE33WF5A23;
+				INFOPLIST_FILE = Up2SchoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = up2school.Up2SchoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Up2School;
+			};
+			name = Debug;
+		};
+		FF4A75CD1EA21AA600594981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QE33WF5A23;
+				INFOPLIST_FILE = Up2SchoolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = up2school.Up2SchoolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Up2School;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4A75981EA21AA600594981 /* Build configuration list for PBXProject "Up2School" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A75C31EA21AA600594981 /* Debug */,
+				FF4A75C41EA21AA600594981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4A75C51EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2School" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A75C61EA21AA600594981 /* Debug */,
+				FF4A75C71EA21AA600594981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF4A75C81EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2SchoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A75C91EA21AA600594981 /* Debug */,
+				FF4A75CA1EA21AA600594981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF4A75CB1EA21AA600594981 /* Build configuration list for PBXNativeTarget "Up2SchoolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A75CC1EA21AA600594981 /* Debug */,
+				FF4A75CD1EA21AA600594981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF4A75951EA21AA600594981 /* Project object */;
+}
