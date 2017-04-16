@@ -10,9 +10,49 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var surnameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var invalidCredentialsLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Sign Up"
+        hideInvalidCredentials()
+    }
+
+    @IBAction func signUp(_ sender: Any) {
+        guard let name = nameTextField.text, let surname = surnameTextField.text,
+            let email = emailTextField.text, let phone = phoneTextField.text,
+            let password = passwordTextField.text, areValidCredentials() else {
+                showInvalidCredentials()
+                UIView.animate(withDuration: 3) { self.hideInvalidCredentials() }
+                return
+        }
+        let user = User(email: email, firstName: name, lastName: surname,
+                        password: password, phoneNumber: phone)
+        LoginManager.signUp(user)
+    }
+
+    private func areValidCredentials() -> Bool {
+        return !(nameTextField.text?.isEmpty ?? true) &&
+            !(surnameTextField.text?.isEmpty ?? true) &&
+            !(emailTextField.text?.isEmpty ?? true) &&
+            !(phoneTextField.text?.isEmpty ?? true) &&
+            !(passwordTextField.text?.isEmpty ?? true) &&
+            !(confirmPasswordTextField.text?.isEmpty ?? true) &&
+            passwordTextField.text == confirmPasswordTextField.text
+    }
+
+    private func showInvalidCredentials() {
+        invalidCredentialsLabel.layer.opacity = 1
+    }
+
+    private func hideInvalidCredentials() {
+        invalidCredentialsLabel.layer.opacity = 0
     }
 }

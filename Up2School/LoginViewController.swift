@@ -10,12 +10,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    var type = UserType.teacher
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var invalidCredentialsLabel: UILabel!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Sign In"
+        hideInvalidCredentials()
     }
 
     @IBAction func signUp(_ sender: Any) {
@@ -24,7 +28,39 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signIn(_ sender: Any) {
-        let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "SchoolPickerViewController")
-        navigationController?.pushViewController(viewController, animated: true)
+        guard isValidLogin() else {
+            showInvalidCredentials()
+            UIView.animate(withDuration: 3) { self.hideInvalidCredentials() }
+            return
+        }
+        if userType == .parent {
+            let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "SchoolPickerViewController") as! SchoolPickerViewController
+            navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "EditClassViewController") as! EditClassViewController
+            guard let user = LoginManager.instance.currentUser else { return }
+            for school in schools {
+                for `class` in school.classes {
+                    if `class`.teacher == "\(user.lastName) \(user.firstName)" {
+                        viewController.class = `class`
+                    }
+                }
+            }
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+
+    }
+
+    private func showInvalidCredentials() {
+        invalidCredentialsLabel.layer.opacity = 1
+    }
+
+    private func hideInvalidCredentials() {
+        invalidCredentialsLabel.layer.opacity = 0
+    }
+
+    private func isValidLogin() -> Bool {
+        guard let email = emailTextField.text, let password = passwordTextField.text else { return false }
+        return LoginManager.login(email: email, password: password)
     }
 }

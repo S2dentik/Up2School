@@ -19,7 +19,10 @@ class EditClassViewController: UIViewController, UICollectionViewDataSource, UIC
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        createClassButton.isHidden = true
+        noClassLabel.isHidden = true
+        configureLabels()
+        navigationItem.title = self.class?.name
     }
 
     // MARK: - UICollectionViewDataSource
@@ -38,5 +41,21 @@ class EditClassViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.nameLabel.text = self.class?.students[indexPath.row].name
 
         return cell
+    }
+
+    // MARK: - Private
+
+    private func configureLabels() {
+        if let currentClass = self.class {
+            if currentClass.students.isEmpty {
+                createClassButton.isHidden = true
+                noClassLabel.isHidden = false
+            }
+            return
+        } else {
+            createClassButton.isHidden = false
+            noClassLabel.isHidden = true
+            return
+        }
     }
 }

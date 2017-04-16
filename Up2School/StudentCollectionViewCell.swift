@@ -11,5 +11,9 @@ import UIKit
 class StudentCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
+    var student: Student?
 
+    @IBAction func cellPressed(_ sender: Any) {
+        
+    }
 }

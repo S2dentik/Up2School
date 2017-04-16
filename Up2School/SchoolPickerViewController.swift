@@ -46,6 +46,7 @@ class SchoolPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
         pageViewController.dataSource = self
         pageViewController.setViewControllers([viewControllerAtIndex(0)],
                                               direction: .forward, animated: true, completion: nil)
+        pageViewController.navigationItem.title = student.name
         navigationController?.pushViewController(pageViewController, animated: true)
     }
 
