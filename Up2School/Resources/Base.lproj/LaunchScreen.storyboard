@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17553705_215560712257023_5809271032287727118_n.png" translatesAutoresizingMaskIntoConstraints="NO" id="lHi-0X-pjc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="lHi-0X-pjc">
                                 <rect key="frame" x="0.0" y="131.5" width="375" height="404"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="404" id="G51-tA-1t1"/>
@@ -44,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="17553705_215560712257023_5809271032287727118_n.png" width="404" height="404"/>
+        <image name="LaunchScreen" width="404" height="404"/>
     </resources>
 </document>

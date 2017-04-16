@@ -12,9 +12,19 @@ class LoginViewController: UIViewController {
 
     var type = UserType.teacher
 
-}
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-enum UserType {
-    case teacher
-    case parent
+        navigationItem.title = "Sign In"
+    }
+
+    @IBAction func signUp(_ sender: Any) {
+        let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "SignUpViewController")
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func signIn(_ sender: Any) {
+        let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "SchoolPickerViewController")
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

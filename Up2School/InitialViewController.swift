@@ -8,8 +8,6 @@
 
 import UIKit
 
-var userType = UserType.parent
-
 class InitialViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -30,8 +28,14 @@ class InitialViewController: UIViewController {
 
 
     private func presentLoginScreen() {
-        let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
+var userType = UserType.parent
+
+enum UserType {
+    case teacher
+    case parent
+}
