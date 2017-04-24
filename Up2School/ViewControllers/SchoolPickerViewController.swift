@@ -32,6 +32,10 @@ class SchoolPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
         return Database.schools[schoolIndex].classes[classIndex].students[studentIndex]
     }
 
+    var teacher: String {
+        return Database.schools[schoolIndex].classes[classIndex].teacher
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +57,7 @@ class SchoolPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     func viewControllerAtIndex(_ index: Int) -> UIViewController {
         let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "ReportViewController") as! ReportViewController
         vc.report = student.reports[index]
+        vc.teacher = teacher
         vc.pageIndex = index
 
         return vc

@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class ReportViewController: UIViewController {
+class ReportViewController: UIViewController, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var academicImage1: UIImageView!
     @IBOutlet weak var academicImage2: UIImageView!
@@ -27,12 +28,32 @@ class ReportViewController: UIViewController {
 
     var pageIndex: Int!
     var report: Report?
+    var teacher: String?
+
+    var teacherPhone: String? {
+        guard let teacher = teacher else { return nil }
+        return LoginManager.users.lazy.filter { "\($0.lastName) \($0.firstName)" == teacher }.first?.phoneNumber
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureAcademicActivity()
         configureLabels()
+    }
+
+    @IBAction func messageTeacher(_ sender: Any) {
+        let composeVC = MFMessageComposeViewController()
+        composeVC.messageComposeDelegate = self
+
+        composeVC.recipients = teacherPhone.flatMap { [$0] } ?? []
+        composeVC.body = teacher.flatMap { "Thank you \($0)" }
+
+        present(composeVC, animated: true, completion: nil)
+    }
+
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        controller.dismiss(animated: true, completion: nil)
     }
 
     private func configureLabels() {

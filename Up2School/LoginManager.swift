@@ -15,7 +15,7 @@ final class LoginManager: NSObject, NSKeyedUnarchiverDelegate {
 
     var currentUser: User?
 
-    private static var users: [User] {
+    static var users: [User] {
         get {
             let datas = defaults.array(forKey: "users") as? [Data] ?? []
             return datas.flatMap { data in

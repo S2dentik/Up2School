@@ -289,12 +289,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5H-Xx-N5l">
+                                <rect key="frame" x="85.5" y="434" width="149" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Message teacher"/>
+                                <connections>
+                                    <action selector="messageTeacher:" destination="srS-vQ-6jD" eventType="touchUpInside" id="fPn-Fk-CgH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CQJ-cb-sqZ" firstAttribute="centerX" secondItem="hhh-h2-n3D" secondAttribute="centerX" id="5fn-jt-JYH"/>
                             <constraint firstItem="i7K-6M-iQ3" firstAttribute="leading" secondItem="hhh-h2-n3D" secondAttribute="leadingMargin" id="Ate-lE-6cB"/>
                             <constraint firstItem="EMW-3o-x06" firstAttribute="centerX" secondItem="hhh-h2-n3D" secondAttribute="centerX" id="B2t-6j-dKC"/>
+                            <constraint firstItem="ejr-EQ-x5X" firstAttribute="top" secondItem="N5H-Xx-N5l" secondAttribute="bottom" constant="100" id="DKI-fA-QgB"/>
                             <constraint firstItem="CQJ-cb-sqZ" firstAttribute="top" secondItem="x55-ip-wY4" secondAttribute="bottom" constant="20" id="ETY-se-0Ih"/>
                             <constraint firstItem="EMW-3o-x06" firstAttribute="top" secondItem="CQJ-cb-sqZ" secondAttribute="bottom" constant="10" id="HyM-UL-PhF"/>
                             <constraint firstItem="i7K-6M-iQ3" firstAttribute="centerX" secondItem="hhh-h2-n3D" secondAttribute="centerX" id="QLq-rN-yeE"/>
@@ -303,6 +312,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="HI0-Ry-CeJ" secondAttribute="trailing" id="VF6-kq-7lx"/>
                             <constraint firstItem="yTL-W4-Que" firstAttribute="centerX" secondItem="hhh-h2-n3D" secondAttribute="centerX" id="Yr2-6z-2Pi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="i7K-6M-iQ3" secondAttribute="trailing" id="bYG-l6-DFa"/>
+                            <constraint firstItem="N5H-Xx-N5l" firstAttribute="centerX" secondItem="hhh-h2-n3D" secondAttribute="centerX" id="cTL-qQ-QEw"/>
                             <constraint firstItem="yTL-W4-Que" firstAttribute="top" secondItem="EMW-3o-x06" secondAttribute="bottom" constant="10" id="dIc-CF-k3e"/>
                             <constraint firstItem="HI0-Ry-CeJ" firstAttribute="top" secondItem="i7K-6M-iQ3" secondAttribute="bottom" constant="10" id="eo6-Jp-Blp"/>
                             <constraint firstItem="i7K-6M-iQ3" firstAttribute="top" secondItem="yTL-W4-Que" secondAttribute="bottom" constant="10" id="gLT-6T-YEo"/>

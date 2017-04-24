@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FF28171C1EABC81200BD3B67 /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28171B1EABC81200BD3B67 /* CreateClassViewController.swift */; };
-		FF28171E1EAC721A00BD3B67 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28171D1EAC721A00BD3B67 /* MessageSender.swift */; };
 		FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A01EA21AA600594981 /* AppDelegate.swift */; };
 		FFDEE7B21EA230AE00D8A81F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7B11EA230AE00D8A81F /* UIStoryboard.swift */; };
 		FFDEE7C21EA23B7400D8A81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDEE7B71EA23B7400D8A81F /* Assets.xcassets */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		FF28171B1EABC81200BD3B67 /* CreateClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
-		FF28171D1EAC721A00BD3B67 /* MessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
 		FF4A759D1EA21AA600594981 /* Up2School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Up2School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A75A01EA21AA600594981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF4A75B11EA21AA600594981 /* Up2SchoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Up2SchoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +131,6 @@
 				FFDEE7ED1EA50CF300D8A81F /* Models */,
 				FFDEE7DE1EA50CE300D8A81F /* ViewControllers */,
 				FFDEE7B51EA23B7400D8A81F /* Resources */,
-				FF28171D1EAC721A00BD3B67 /* MessageSender.swift */,
 			);
 			path = Up2School;
 			sourceTree = "<group>";
@@ -317,7 +314,6 @@
 			files = (
 				FFDEE7F11EA50D0F00D8A81F /* User.swift in Sources */,
 				FFDEE7F91EA51CB000D8A81F /* LeaveReportViewController.swift in Sources */,
-				FF28171E1EAC721A00BD3B67 /* MessageSender.swift in Sources */,
 				FFDEE7E91EA50CE300D8A81F /* ReportViewController.swift in Sources */,
 				FFDEE7F31EA50D2A00D8A81F /* Class.swift in Sources */,
 				FFDEE7F71EA50D6D00D8A81F /* Report.swift in Sources */,
