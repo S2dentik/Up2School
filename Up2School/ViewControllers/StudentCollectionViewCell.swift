@@ -11,9 +11,10 @@ import UIKit
 class StudentCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
-    var student: Student?
+    private var student: Student?
 
-    @IBAction func cellPressed(_ sender: Any) {
-        
+    func configureWithStudent(_ student: Student) {
+        self.student = student
+        nameLabel.text = student.name
     }
 }

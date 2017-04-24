@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -365,13 +364,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-cD-8zB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <action selector="cellPressed:" destination="Ogc-Ah-2KC" eventType="touchUpInside" id="B90-Mh-CzE"/>
-                                                    </connections>
-                                                </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="student" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-e3-IY4">
                                                     <rect key="frame" x="12" y="10" width="56" height="50"/>
                                                 </imageView>
@@ -385,16 +377,12 @@
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Umc-xn-53d" secondAttribute="bottom" constant="2" id="6xG-XM-7Jt"/>
-                                            <constraint firstAttribute="bottom" secondItem="cQC-cD-8zB" secondAttribute="bottom" id="Gk9-rF-j8s"/>
                                             <constraint firstItem="Umc-xn-53d" firstAttribute="top" secondItem="wLe-e3-IY4" secondAttribute="bottom" constant="6" id="Rk9-I4-K22"/>
                                             <constraint firstItem="Umc-xn-53d" firstAttribute="leading" secondItem="Ogc-Ah-2KC" secondAttribute="leading" id="Tat-20-Fe1"/>
-                                            <constraint firstAttribute="trailing" secondItem="cQC-cD-8zB" secondAttribute="trailing" id="TfH-9l-PAj"/>
-                                            <constraint firstItem="cQC-cD-8zB" firstAttribute="top" secondItem="Ogc-Ah-2KC" secondAttribute="top" id="bRR-LE-tMf"/>
                                             <constraint firstAttribute="trailing" secondItem="Umc-xn-53d" secondAttribute="trailing" id="jA7-4d-Ke4"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="wLe-e3-IY4" secondAttribute="trailing" constant="4" id="lLU-br-k2b"/>
                                             <constraint firstItem="wLe-e3-IY4" firstAttribute="top" secondItem="Ogc-Ah-2KC" secondAttribute="topMargin" constant="2" id="pB1-AF-X22"/>
                                             <constraint firstItem="wLe-e3-IY4" firstAttribute="leading" secondItem="Ogc-Ah-2KC" secondAttribute="leadingMargin" constant="4" id="ski-XS-hHE"/>
-                                            <constraint firstItem="cQC-cD-8zB" firstAttribute="leading" secondItem="Ogc-Ah-2KC" secondAttribute="leading" id="zQs-z6-Ws8"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="nameLabel" destination="Umc-xn-53d" id="c2e-Id-Pq7"/>
@@ -418,6 +406,9 @@
                                 <state key="normal" title="Create class">
                                     <color key="titleColor" red="0.95644581317901611" green="0.79126060009002686" blue="0.35279303789138794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="createClass:" destination="SI6-sk-k3j" eventType="touchUpInside" id="bGR-bK-Rhs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -775,10 +766,10 @@
             </objects>
             <point key="canvasLocation" x="135" y="136.26760563380282"/>
         </scene>
-        <!--View Controller-->
+        <!--Leave Report View Controller-->
         <scene sceneID="dxQ-lu-F4W">
             <objects>
-                <viewController id="yXb-Fl-0xy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeaveReportViewController" id="yXb-Fl-0xy" customClass="LeaveReportViewController" customModule="Up2School" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aZ8-Fp-ahO"/>
                         <viewControllerLayoutGuide type="bottom" id="mkB-9T-AuA"/>
@@ -790,28 +781,48 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-CU-D8i" userLabel="Academic State">
                                 <rect key="frame" x="16" y="114" width="288" height="57.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKi-Vn-cIo">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKi-Vn-cIo">
                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="academic1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="aKi-Vn-cIo" secondAttribute="height" multiplier="1:1" id="33V-jM-UQl"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button" image="academic_filled"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="X5n-43-3aL"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPB-mz-YUK">
-                                        <rect key="frame" x="115" y="0.5" width="58" height="57.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsD-bf-Dzb">
-                                        <rect key="frame" x="231" y="0.0" width="57" height="57.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBi-PR-HDd">
-                                        <rect key="frame" x="173" y="0.0" width="58" height="57.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGW-ZH-4c1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGW-ZH-4c1">
                                         <rect key="frame" x="57.5" y="0.0" width="57.5" height="57.5"/>
-                                        <state key="normal" title="Button"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="academic2"/>
+                                        <state key="normal" title="Button" image="academic_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="u94-Fe-MoH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPB-mz-YUK">
+                                        <rect key="frame" x="115" y="0.0" width="57.5" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="academic3"/>
+                                        <state key="normal" title="Button" image="academic_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="lL8-tl-K6S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBi-PR-HDd">
+                                        <rect key="frame" x="172.5" y="0.0" width="57.5" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="academic4"/>
+                                        <state key="normal" title="Button" image="academic_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="4rV-WT-5vm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsD-bf-Dzb">
+                                        <rect key="frame" x="230" y="0.0" width="58" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="academic5"/>
+                                        <state key="normal" title="Button" image="academic_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="aGj-G5-jI6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.8564426557" blue="0.46050126530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -841,31 +852,51 @@
                                     <constraint firstItem="lGW-ZH-4c1" firstAttribute="height" secondItem="aKi-Vn-cIo" secondAttribute="height" id="zi0-bq-iz6"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9A-4h-TCE" userLabel="Academic State">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9A-4h-TCE" userLabel="Emotional Rating">
                                 <rect key="frame" x="16" y="176" width="288" height="57.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz7-aK-6rx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qz7-aK-6rx">
                                         <rect key="frame" x="0.0" y="0.0" width="57.5" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emotional1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qz7-aK-6rx" secondAttribute="height" multiplier="1:1" id="roP-Z8-3B7"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button" image="heart_filled"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="fPC-8o-sem"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-fO-gDy">
-                                        <rect key="frame" x="115" y="0.5" width="58" height="57.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuU-Qn-PHu">
-                                        <rect key="frame" x="231" y="0.0" width="57" height="57.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijs-bc-762">
-                                        <rect key="frame" x="173" y="0.0" width="58" height="57.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-N6-zFf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-N6-zFf">
                                         <rect key="frame" x="57.5" y="0.0" width="57.5" height="57.5"/>
-                                        <state key="normal" title="Button"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emotional2"/>
+                                        <state key="normal" title="Button" image="heart_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="9Iy-It-4MM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciH-fO-gDy">
+                                        <rect key="frame" x="115" y="0.5" width="57.5" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emotional3"/>
+                                        <state key="normal" title="Button" image="heart_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="mkR-y6-V42"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijs-bc-762">
+                                        <rect key="frame" x="172.5" y="0.0" width="57.5" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emotional4"/>
+                                        <state key="normal" title="Button" image="heart_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="qhC-75-tyx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuU-Qn-PHu">
+                                        <rect key="frame" x="230" y="0.0" width="58" height="57.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emotional5"/>
+                                        <state key="normal" title="Button" image="heart_empty"/>
+                                        <connections>
+                                            <action selector="ratingButtonPressed:" destination="yXb-Fl-0xy" eventType="touchUpInside" id="SbN-1M-GoE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.8564426557" blue="0.46050126530000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -904,7 +935,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-bE-txg">
                                 <rect key="frame" x="16" y="279" width="288" height="104"/>
                                 <color key="backgroundColor" red="0.93413221840000005" green="0.96038901809999999" blue="0.99609053130000003" alpha="0.21982284329999999" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -954,16 +984,93 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="messageTextView" destination="pSW-bE-txg" id="gZc-sn-R8Q"/>
+                        <outlet property="academicButton1" destination="aKi-Vn-cIo" id="A2e-EO-vqh"/>
+                        <outlet property="academicButton2" destination="lGW-ZH-4c1" id="IkL-TN-yfF"/>
+                        <outlet property="academicButton3" destination="JPB-mz-YUK" id="IDZ-6Y-f0e"/>
+                        <outlet property="academicButton4" destination="qBi-PR-HDd" id="oEo-Cn-dSK"/>
+                        <outlet property="academicButton5" destination="JsD-bf-Dzb" id="wfJ-4f-5u8"/>
+                        <outlet property="commentTextField" destination="pSW-bE-txg" id="yrP-Kx-cwB"/>
+                        <outlet property="datePicker" destination="ipt-M2-I8P" id="Xty-IT-flH"/>
+                        <outlet property="emotionalRating1" destination="qz7-aK-6rx" id="1br-yM-DVi"/>
+                        <outlet property="emotionalRating2" destination="VfG-N6-zFf" id="6W2-hu-gvF"/>
+                        <outlet property="emotionalRating3" destination="ciH-fO-gDy" id="NLI-lo-Mp3"/>
+                        <outlet property="emotionalRating4" destination="Ijs-bc-762" id="Dmi-wZ-nVe"/>
+                        <outlet property="emotionalRating5" destination="NuU-Qn-PHu" id="tYf-Wp-uuq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAR-g4-cdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="946.875" y="1673.2394366197184"/>
         </scene>
+        <!--Create Class View Controller-->
+        <scene sceneID="1PZ-JQ-Up2">
+            <objects>
+                <viewController storyboardIdentifier="CreateClassViewController" id="3Un-Jf-fJq" customClass="CreateClassViewController" customModule="Up2School" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3vo-Up-iwi"/>
+                        <viewControllerLayoutGuide type="bottom" id="E7q-6y-kbv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sJM-fK-0fN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftQ-BB-0WH">
+                                <rect key="frame" x="124.5" y="84" width="72.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.95644581319999999" green="0.79126060009999999" blue="0.35279303789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgg-8k-EPB">
+                                <rect key="frame" x="130.5" y="334" width="59.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.95644581319999999" green="0.79126060009999999" blue="0.35279303789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l0O-wj-R3m">
+                                <rect key="frame" x="16" y="368" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhA-xu-TgU">
+                                <rect key="frame" x="0.0" y="108" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3Un-Jf-fJq" id="Yje-n3-cP9"/>
+                                    <outlet property="delegate" destination="3Un-Jf-fJq" id="jEI-18-ejN"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pgg-8k-EPB" firstAttribute="top" secondItem="GhA-xu-TgU" secondAttribute="bottom" constant="10" id="7R6-oX-Tzt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l0O-wj-R3m" secondAttribute="trailing" id="CUd-sN-NLC"/>
+                            <constraint firstItem="l0O-wj-R3m" firstAttribute="top" secondItem="pgg-8k-EPB" secondAttribute="bottom" constant="10" id="FHG-bj-H2U"/>
+                            <constraint firstItem="ftQ-BB-0WH" firstAttribute="centerX" secondItem="sJM-fK-0fN" secondAttribute="centerX" id="Qs3-bI-xWq"/>
+                            <constraint firstItem="GhA-xu-TgU" firstAttribute="top" secondItem="ftQ-BB-0WH" secondAttribute="bottom" id="Ref-b3-nEJ"/>
+                            <constraint firstItem="l0O-wj-R3m" firstAttribute="leading" secondItem="sJM-fK-0fN" secondAttribute="leadingMargin" id="Ygr-c3-Heb"/>
+                            <constraint firstItem="pgg-8k-EPB" firstAttribute="centerX" secondItem="sJM-fK-0fN" secondAttribute="centerX" id="Ylx-sk-yrN"/>
+                            <constraint firstItem="l0O-wj-R3m" firstAttribute="centerX" secondItem="sJM-fK-0fN" secondAttribute="centerX" id="aoM-gt-Map"/>
+                            <constraint firstItem="GhA-xu-TgU" firstAttribute="centerX" secondItem="sJM-fK-0fN" secondAttribute="centerX" id="bA0-aN-RCD"/>
+                            <constraint firstItem="ftQ-BB-0WH" firstAttribute="top" secondItem="3vo-Up-iwi" secondAttribute="bottom" constant="20" id="zVa-4I-qvu"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="classTextField" destination="l0O-wj-R3m" id="LMB-NY-xIE"/>
+                        <outlet property="schoolPickerView" destination="GhA-xu-TgU" id="Qpv-C1-z1v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yp6-CI-xFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="1672.1830985915494"/>
+        </scene>
     </scenes>
     <resources>
         <image name="abc" width="392" height="335"/>
+        <image name="academic_empty" width="104" height="98"/>
+        <image name="academic_filled" width="84" height="80"/>
+        <image name="heart_empty" width="86" height="78"/>
+        <image name="heart_filled" width="86" height="78"/>
         <image name="parent" width="146" height="146"/>
         <image name="student" width="148" height="148"/>
         <image name="teacher" width="134" height="150"/>

@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF28171C1EABC81200BD3B67 /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28171B1EABC81200BD3B67 /* CreateClassViewController.swift */; };
+		FF28171E1EAC721A00BD3B67 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28171D1EAC721A00BD3B67 /* MessageSender.swift */; };
 		FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A01EA21AA600594981 /* AppDelegate.swift */; };
-		FF4A75A31EA21AA600594981 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A75A21EA21AA600594981 /* InitialViewController.swift */; };
-		FFDEE7AC1EA2267600D8A81F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7AB1EA2267600D8A81F /* LoginViewController.swift */; };
-		FFDEE7B01EA2306100D8A81F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7AF1EA2306100D8A81F /* SignUpViewController.swift */; };
 		FFDEE7B21EA230AE00D8A81F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7B11EA230AE00D8A81F /* UIStoryboard.swift */; };
 		FFDEE7C21EA23B7400D8A81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDEE7B71EA23B7400D8A81F /* Assets.xcassets */; };
 		FFDEE7C31EA23B7400D8A81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDEE7B81EA23B7400D8A81F /* LaunchScreen.storyboard */; };
 		FFDEE7C41EA23B7400D8A81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDEE7BA1EA23B7400D8A81F /* Main.storyboard */; };
 		FFDEE7CB1EA23C1500D8A81F /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDEE7CA1EA23C1500D8A81F /* AppIcon.xcassets */; };
 		FFDEE7CF1EA2401200D8A81F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7CE1EA2401200D8A81F /* Database.swift */; };
-		FFDEE7D11EA2459A00D8A81F /* SchoolPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7D01EA2459A00D8A81F /* SchoolPickerViewController.swift */; };
-		FFDEE7D31EA24E9700D8A81F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7D21EA24E9700D8A81F /* ReportViewController.swift */; };
-		FFDEE7D91EA26CC100D8A81F /* EditClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7D81EA26CC100D8A81F /* EditClassViewController.swift */; };
-		FFDEE7DB1EA26FC100D8A81F /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7DA1EA26FC100D8A81F /* StudentCollectionViewCell.swift */; };
 		FFDEE7DD1EA32CC200D8A81F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7DC1EA32CC200D8A81F /* LoginManager.swift */; };
+		FFDEE7E61EA50CE300D8A81F /* EditClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7DF1EA50CE300D8A81F /* EditClassViewController.swift */; };
+		FFDEE7E71EA50CE300D8A81F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7E01EA50CE300D8A81F /* InitialViewController.swift */; };
+		FFDEE7E81EA50CE300D8A81F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7E11EA50CE300D8A81F /* LoginViewController.swift */; };
+		FFDEE7E91EA50CE300D8A81F /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7E21EA50CE300D8A81F /* ReportViewController.swift */; };
+		FFDEE7EA1EA50CE300D8A81F /* SchoolPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7E31EA50CE300D8A81F /* SchoolPickerViewController.swift */; };
+		FFDEE7EB1EA50CE300D8A81F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7E41EA50CE300D8A81F /* SignUpViewController.swift */; };
+		FFDEE7EC1EA50CE300D8A81F /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7E51EA50CE300D8A81F /* StudentCollectionViewCell.swift */; };
+		FFDEE7EF1EA50CFC00D8A81F /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7EE1EA50CFC00D8A81F /* School.swift */; };
+		FFDEE7F11EA50D0F00D8A81F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7F01EA50D0F00D8A81F /* User.swift */; };
+		FFDEE7F31EA50D2A00D8A81F /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7F21EA50D2A00D8A81F /* Class.swift */; };
+		FFDEE7F51EA50D4200D8A81F /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7F41EA50D4200D8A81F /* Student.swift */; };
+		FFDEE7F71EA50D6D00D8A81F /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7F61EA50D6D00D8A81F /* Report.swift */; };
+		FFDEE7F91EA51CB000D8A81F /* LeaveReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDEE7F81EA51CB000D8A81F /* LeaveReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF28171B1EABC81200BD3B67 /* CreateClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
+		FF28171D1EAC721A00BD3B67 /* MessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
 		FF4A759D1EA21AA600594981 /* Up2School.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Up2School.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A75A01EA21AA600594981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF4A75A21EA21AA600594981 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		FF4A75B11EA21AA600594981 /* Up2SchoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Up2SchoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4A75BC1EA21AA600594981 /* Up2SchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Up2SchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFDEE7AB1EA2267600D8A81F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FFDEE7AF1EA2306100D8A81F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FFDEE7B11EA230AE00D8A81F /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		FFDEE7B71EA23B7400D8A81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFDEE7B91EA23B7400D8A81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,11 +63,20 @@
 		FFDEE7BC1EA23B7400D8A81F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDEE7CA1EA23C1500D8A81F /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		FFDEE7CE1EA2401200D8A81F /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		FFDEE7D01EA2459A00D8A81F /* SchoolPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolPickerViewController.swift; sourceTree = "<group>"; };
-		FFDEE7D21EA24E9700D8A81F /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
-		FFDEE7D81EA26CC100D8A81F /* EditClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClassViewController.swift; sourceTree = "<group>"; };
-		FFDEE7DA1EA26FC100D8A81F /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFDEE7DC1EA32CC200D8A81F /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		FFDEE7DF1EA50CE300D8A81F /* EditClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClassViewController.swift; sourceTree = "<group>"; };
+		FFDEE7E01EA50CE300D8A81F /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		FFDEE7E11EA50CE300D8A81F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FFDEE7E21EA50CE300D8A81F /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		FFDEE7E31EA50CE300D8A81F /* SchoolPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolPickerViewController.swift; sourceTree = "<group>"; };
+		FFDEE7E41EA50CE300D8A81F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FFDEE7E51EA50CE300D8A81F /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFDEE7EE1EA50CFC00D8A81F /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		FFDEE7F01EA50D0F00D8A81F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FFDEE7F21EA50D2A00D8A81F /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		FFDEE7F41EA50D4200D8A81F /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		FFDEE7F61EA50D6D00D8A81F /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		FFDEE7F81EA51CB000D8A81F /* LeaveReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,18 +126,14 @@
 			isa = PBXGroup;
 			children = (
 				FF4A75A01EA21AA600594981 /* AppDelegate.swift */,
-				FF4A75A21EA21AA600594981 /* InitialViewController.swift */,
-				FFDEE7AB1EA2267600D8A81F /* LoginViewController.swift */,
-				FFDEE7AF1EA2306100D8A81F /* SignUpViewController.swift */,
 				FFDEE7DC1EA32CC200D8A81F /* LoginManager.swift */,
-				FFDEE7D01EA2459A00D8A81F /* SchoolPickerViewController.swift */,
-				FFDEE7D21EA24E9700D8A81F /* ReportViewController.swift */,
-				FFDEE7D81EA26CC100D8A81F /* EditClassViewController.swift */,
-				FFDEE7DA1EA26FC100D8A81F /* StudentCollectionViewCell.swift */,
 				FFDEE7B11EA230AE00D8A81F /* UIStoryboard.swift */,
 				FFDEE7CE1EA2401200D8A81F /* Database.swift */,
 				FFDEE7BA1EA23B7400D8A81F /* Main.storyboard */,
+				FFDEE7ED1EA50CF300D8A81F /* Models */,
+				FFDEE7DE1EA50CE300D8A81F /* ViewControllers */,
 				FFDEE7B51EA23B7400D8A81F /* Resources */,
+				FF28171D1EAC721A00BD3B67 /* MessageSender.swift */,
 			);
 			path = Up2School;
 			sourceTree = "<group>";
@@ -135,6 +147,34 @@
 				FFDEE7CA1EA23C1500D8A81F /* AppIcon.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFDEE7DE1EA50CE300D8A81F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFDEE7DF1EA50CE300D8A81F /* EditClassViewController.swift */,
+				FFDEE7E01EA50CE300D8A81F /* InitialViewController.swift */,
+				FFDEE7E11EA50CE300D8A81F /* LoginViewController.swift */,
+				FFDEE7E21EA50CE300D8A81F /* ReportViewController.swift */,
+				FFDEE7E31EA50CE300D8A81F /* SchoolPickerViewController.swift */,
+				FFDEE7E41EA50CE300D8A81F /* SignUpViewController.swift */,
+				FFDEE7E51EA50CE300D8A81F /* StudentCollectionViewCell.swift */,
+				FFDEE7F81EA51CB000D8A81F /* LeaveReportViewController.swift */,
+				FF28171B1EABC81200BD3B67 /* CreateClassViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FFDEE7ED1EA50CF300D8A81F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFDEE7EE1EA50CFC00D8A81F /* School.swift */,
+				FFDEE7F01EA50D0F00D8A81F /* User.swift */,
+				FFDEE7F21EA50D2A00D8A81F /* Class.swift */,
+				FFDEE7F41EA50D4200D8A81F /* Student.swift */,
+				FFDEE7F61EA50D6D00D8A81F /* Report.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,17 +315,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFDEE7DB1EA26FC100D8A81F /* StudentCollectionViewCell.swift in Sources */,
-				FFDEE7D31EA24E9700D8A81F /* ReportViewController.swift in Sources */,
+				FFDEE7F11EA50D0F00D8A81F /* User.swift in Sources */,
+				FFDEE7F91EA51CB000D8A81F /* LeaveReportViewController.swift in Sources */,
+				FF28171E1EAC721A00BD3B67 /* MessageSender.swift in Sources */,
+				FFDEE7E91EA50CE300D8A81F /* ReportViewController.swift in Sources */,
+				FFDEE7F31EA50D2A00D8A81F /* Class.swift in Sources */,
+				FFDEE7F71EA50D6D00D8A81F /* Report.swift in Sources */,
+				FFDEE7E81EA50CE300D8A81F /* LoginViewController.swift in Sources */,
 				FFDEE7CF1EA2401200D8A81F /* Database.swift in Sources */,
-				FFDEE7AC1EA2267600D8A81F /* LoginViewController.swift in Sources */,
-				FFDEE7D11EA2459A00D8A81F /* SchoolPickerViewController.swift in Sources */,
+				FFDEE7EA1EA50CE300D8A81F /* SchoolPickerViewController.swift in Sources */,
+				FFDEE7EB1EA50CE300D8A81F /* SignUpViewController.swift in Sources */,
 				FFDEE7B21EA230AE00D8A81F /* UIStoryboard.swift in Sources */,
-				FF4A75A31EA21AA600594981 /* InitialViewController.swift in Sources */,
+				FFDEE7E61EA50CE300D8A81F /* EditClassViewController.swift in Sources */,
+				FFDEE7EF1EA50CFC00D8A81F /* School.swift in Sources */,
+				FFDEE7E71EA50CE300D8A81F /* InitialViewController.swift in Sources */,
 				FFDEE7DD1EA32CC200D8A81F /* LoginManager.swift in Sources */,
-				FFDEE7D91EA26CC100D8A81F /* EditClassViewController.swift in Sources */,
-				FFDEE7B01EA2306100D8A81F /* SignUpViewController.swift in Sources */,
+				FFDEE7EC1EA50CE300D8A81F /* StudentCollectionViewCell.swift in Sources */,
+				FFDEE7F51EA50D4200D8A81F /* Student.swift in Sources */,
 				FF4A75A11EA21AA600594981 /* AppDelegate.swift in Sources */,
+				FF28171C1EABC81200BD3B67 /* CreateClassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

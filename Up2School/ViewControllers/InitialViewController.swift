@@ -35,7 +35,7 @@ class InitialViewController: UIViewController {
 
 var userType = UserType.parent
 
-enum UserType {
+enum UserType: Int {
     case teacher
     case parent
 }

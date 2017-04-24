@@ -29,7 +29,7 @@ class SchoolPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     }
 
     var student: Student {
-        return schools[schoolIndex].classes[classIndex].students[studentIndex]
+        return Database.schools[schoolIndex].classes[classIndex].students[studentIndex]
     }
 
     override func viewDidLoad() {
@@ -65,6 +65,7 @@ class SchoolPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        let schools = Database.schools
         if pickerView === schoolPickerView {
             return schools.count
         } else if pickerView === classPickerView {
@@ -77,6 +78,7 @@ class SchoolPickerViewController: UIViewController, UIPickerViewDataSource, UIPi
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let schools = Database.schools
         if pickerView === schoolPickerView {
             return schools[row].name
         } else if pickerView === classPickerView {

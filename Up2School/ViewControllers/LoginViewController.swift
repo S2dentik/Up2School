@@ -14,12 +14,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var invalidCredentialsLabel: UILabel!
 
+    lazy var gr: UITapGestureRecognizer = {
+        return UITapGestureRecognizer(target: self, action: #selector(endEditing))
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Sign In"
         hideInvalidCredentials()
+        view.addGestureRecognizer(gr)
+    }
+
+    @objc func endEditing() {
+        view.endEditing(true)
     }
 
     @IBAction func signUp(_ sender: Any) {
@@ -39,10 +47,10 @@ class LoginViewController: UIViewController {
         } else {
             let viewController = UIStoryboard.main.instantiateViewController(withIdentifier: "EditClassViewController") as! EditClassViewController
             guard let user = LoginManager.instance.currentUser else { return }
-            for school in schools {
+            for school in Database.schools {
                 for `class` in school.classes {
                     if `class`.teacher == "\(user.lastName) \(user.firstName)" {
-                        viewController.class = `class`
+                        viewController.currentClass = `class`
                     }
                 }
             }
