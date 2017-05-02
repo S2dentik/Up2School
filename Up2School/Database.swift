@@ -71,7 +71,11 @@ private let initialSchools = [
             Student(name: "Lazarev Artur"),
             Student(name: "Avtenii Mihaela"),
             Student(name: "Bet Nina"),
-            Student(name: "Boicu Monica"),
+            Student(name: "Boicu Monica", reports:
+                [
+                    Report(academicRating: .ok, emotionalRating: .ok, comment: "Very good girl.", date: Date())
+                ]
+            ),
             Student(name: "Cazac Alina"),
             Student(name: "Rotari Vitalie"),
             Student(name: "Tulbu Alexandru"),
